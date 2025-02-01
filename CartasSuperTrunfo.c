@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>>
+#include <stdlib.h>
 
 
 int main() {
 	
-    int populacao, area, pontos, codcidade, pib;
+    int populacao, area, pontos, codcidade, pib, densidade, pib2;
     char estado;
 	char cidade[50];
 	
@@ -36,6 +36,9 @@ scanf ("%d", &codcidade);
      system ("pause");
      system ("cls");
 
+densidade = populacao / area;
+pib2 = pib / populacao;
+
      printf (" Carta cadastrada com sucesso!!\n\n\n");
      
      printf ("%s\n", cidade);
@@ -45,7 +48,8 @@ scanf ("%d", &codcidade);
      printf ("Área: %d\n", area);
      printf ("Pib : R$ %d\n", pib);
      printf ("Pontos Turísticos: %d\n", pontos);
-     
+     printf ("Densidade populacional: %d\n", densidade);
+     printf ("PIB per capita: %d\n", pib2);
      
      
      
